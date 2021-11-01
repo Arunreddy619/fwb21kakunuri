@@ -3,7 +3,7 @@ extends layout
 block content
   h1= title
   p Welcome to NorthWest #{title} 
-button(type='button',onclick='update()',class='btn btn-primary') Press Me
+  button(type='button',onclick='update()',class='btn btn-primary') Press Me
   div(id="target") text of Display 
   script.
     var client_count = 0;
@@ -11,4 +11,4 @@ button(type='button',onclick='update()',class='btn btn-primary') Press Me
       client_count +=1;
       document.getElementById("target").innerHTML = "Value now " + client_count;
     }
-  a(href='gas') Gas
+  //a(href='gas') Gas
